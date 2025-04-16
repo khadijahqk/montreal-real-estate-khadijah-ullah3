@@ -70,34 +70,35 @@
 /* COLOR PALETTE & FONTS VARIABLES  */
 
 :root {
-    --header-bg-color: rgb(255, 255, 255);
-    --header-fg-color: rgb(1, 35, 70);
+    --header-bg-color:#205459;
+    --header-fg-color: #D9D166;
   
-    --topNav-bg-color: rgb(255, 255, 255);
+    --topNav-bg-color: #D9D166;
     --topNav-fg-color: rgb(1, 35, 70);
-    --topNav-link-color-link: rgb(1, 35, 70);
-    --topNav-link-color-visited: rgb(52, 61, 70);
-    --topNav-link-color-hover: rgb(41, 1, 70);
-    --topNav-link-color-active: rgb(70, 1, 25);
+    --topNav-link-color-link:  #D9D166;
+    --topNav-link-color-visited: #D9D166;
+    --topNav-link-color-hover: #50BFBF;
+    --topNav-link-color-active: #50BFBF;
   
   
     --main-bg-color: rgb(255, 255, 255);
     --main-fg-color: rgb(1, 35, 70);
     --sidebar-bg-color: rgb(255, 255, 255);
     --sidebar-fg-color: rgb(1, 35, 70);
-    --footer-bg-color: rgb(255, 255, 255);
+    --footer-bg-color:#205459;
     --footer-fg-color: rgb(1, 35, 70);
     --bottomNav-bg-color: rgb(255, 255, 255);
-    --bottompNav-fg-color: rgb(1, 35, 70);
+    --bottompNav-fg-color: #D9D166;
   
     --border-color-light: #ff0000;
     --border-color-dark: #444;
   
-    --titles-color: #1c0263;
+    --titles-color: #205459;
     --bodytext-color: #444444;
   
     --accent-color: rgb(63, 77, 159);
     --highlight-color: #f3c;
+    --lime-color: #D9D166;
   
     --titles-font: "Montserrat", sans-serif;
     --bodytext-font: "Source Sans 3", sans-serif;
@@ -130,10 +131,10 @@
 
    --footerNav-bg-color: rgb(255, 255, 255);
    --footerNav-fg-color: rgb(1, 35, 70);
-   --footerNav-link-color-link: rgb(1, 35, 70);
-   --footerNav-link-color-visited: rgb(52, 61, 70);
-   --footerNav-link-color-hover: rgb(41, 1, 70);
-   --footerNav-link-color-active: rgb(70, 1, 25);
+   --footerNav-link-color-link:#D9D166;
+   --footerNav-link-color-visited: #D9D166;
+   --footerNav-link-color-hover: #50BFBF;
+   --footerNav-link-color-active: #50BFBF;
   }
 
 
@@ -188,6 +189,17 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+/* CHANGING LINK COLORS IN FOOTER AND HEADER */
+
+header a {
+    color: var(--lime-color);
+}
+
+.page-item-2 a {
+color: var(--lime-color);
+}
+
   
 header .branding {
 	display: flex;
@@ -345,19 +357,28 @@ ol {
   
   .copyright {
     margin-left: 2em;
+    color: var(--lime-color);
   }
 
   footer {
     background-color: var(--footer-bg-color);
     font-size: small;
     margin-top: 3em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+  
 }
+
 
 .footer-nav li a {
     font-family: var(--bodytext-font);
     color: var(--footerNav-fg-color); 
     font-size: small;
   }
+
+footer p {
+  margin-bottom: 0em;
+}
   
   .footer-nav li a:link {color: var(--footerNav-link-color-link);}
   .footer-nav li a:visited {color: var(--footerNav-link-color-visited);}
